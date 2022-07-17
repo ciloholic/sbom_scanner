@@ -1,0 +1,10 @@
+services:
+  golang:
+    build: 
+      context: .
+      args:
+        GO_VERSION: $GO_VERSION
+        GOLANGCI_VERSION: $GOLANGCI_VERSION
+    volumes:
+      - .:/sbomer
+    tty: true
